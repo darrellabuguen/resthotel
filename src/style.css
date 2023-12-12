@@ -1,0 +1,982 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.home-header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url('./images/landing-page.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+td {
+    padding: 5px;
+}
+
+nav {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* position: sticky;
+    top: 0;
+    transition: all 0.5s ease; */
+}
+
+footer {
+    padding: 25px;
+    font-family: Roboto;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.mobile-menu-con {
+    width: 70vw;
+    height: 100vh;
+    position: fixed;
+    padding: 25px;
+    display: none;
+    overflow-y: scroll;
+    left: 0;
+    top: 0;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.animate {
+    animation: menu-transition 0.5s ease-in-out;
+    display: block;
+}
+
+.revanimate {
+    animation: menu-retransition 0.5s ease-in-out;
+    display: none;
+}
+
+@keyframes menu-transition {
+    from {
+        display: none;
+        left: -500px;
+    }
+
+    to {
+        display: block;
+        left: 0px;
+    }
+}
+
+@keyframes menu-retransition {
+    from {
+        display: block;
+        left: 0px;
+    }
+
+    to {
+        display: none;
+        left: -500px;
+    }
+}
+
+.mobile-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.menu-con {
+    width: 25px;
+    display: none;
+    cursor: pointer;
+}
+
+.menu-frame {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.bar {
+    height: 4px;
+    width: 100%;
+    background-color: #202020;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.one.animated {
+    opacity: 0%;
+    transform: translate(25px);
+}
+
+.two.animated {
+    transform: rotate(140deg);
+}
+
+.three.animated {
+    opacity: 0%;
+    transform: translate(-25px);
+}
+
+.four.animated {
+    transform: rotate(-280deg);
+}
+
+li {
+    list-style: none;
+}
+
+.link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px;
+}
+
+.link a {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link .backred {
+    cursor: pointer;
+    background-color: red;
+    padding: 15px;
+    color: white;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.logo-container {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    flex: 1;
+}
+
+.logo-container p {
+    cursor: pointer;
+    width: 50px;
+}
+
+.logo {
+    cursor: pointer;
+    width: 50px;
+}
+
+.greet {
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.red {
+    color: red;
+}
+
+.welcome {
+    font-family: 'Lato', sans-serif;
+    font-size: 62px;
+    font-weight: bolder;
+    color: ghostwhite;
+}
+
+.intro-line {
+    margin-bottom: 15px;
+}
+
+.book-btn {
+    background-color: red;
+    border: 2px solid red;
+    padding: 10px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition-duration: 0.4s;
+}
+
+.book-btn.abt {
+    width: 150px;
+}
+
+.book-btn.cont {
+    width: 100%;
+}
+
+.book-btn.confirm {
+    width: 150px;
+}
+
+.book-btn:hover {
+    background-color: white;
+    color: red;
+
+    .book-icon {
+        fill: red;
+    }
+}
+
+.book-icon {
+    width: 25px;
+    fill: #ffffff;
+    transition-duration: 0.4s;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+
+.card {
+    width: 320px;
+    padding: 15px;
+    text-align: center;
+}
+
+.rms-con {
+    flex-direction: column;
+}
+
+.card.rms {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+}
+
+.rmdtls {
+    text-align: justify;
+}
+
+.room2 {
+    flex-direction: row-reverse;
+}
+
+.room4 {
+    flex-direction: row-reverse;
+}
+
+.card-body.rms-body {
+    width: 50%;
+    text-align: left;
+}
+
+.pic-container.rms-pic {
+    width: 50%;
+    height: 70%;
+}
+
+.pic-container {
+    width: 290px;
+    height: 200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.room-pic {
+    width: 100%;
+    height: 100%;
+}
+
+.card p {
+    color: #7E7E7E;
+    padding-bottom: 10px;
+}
+
+.details-btn {
+    border: 2px solid red;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.more-container {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-btn {
+    border: none;
+    background-color: whitesmoke;
+    padding: 15px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.more-btn:hover {
+    background-color: gainsboro;
+}
+
+.room-name {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 64px;
+    font-weight: bolder;
+    text-align: center;
+    pointer-events: none;
+}
+
+.other {
+    text-align: center;
+}
+
+.perks-container {
+    padding: 25px;
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.amenities {
+    width: 100%;
+    height: 270px;
+    text-align: center;
+}
+
+.services {
+    width: 100%;
+    height: 270px;
+    text-align: center;
+}
+
+.amenities h3 {
+    padding: 10px;
+}
+
+.services h3 {
+    padding: 10px;
+}
+
+.description-container {
+    padding: 15px;
+    text-align: center;
+    display: none;
+    margin-bottom: 20px;
+}
+
+.description-container p {
+    color: #7E7E7E;
+}
+
+.descs {
+    padding: 5px;
+    padding-left: 20%;
+    text-align: left;
+}
+
+.terms-container {
+    display: none;
+    text-align: left;
+    width: 100%;
+    margin: auto;
+}
+
+.img-title {
+    text-align: center;
+    padding: 15px;
+    display: none;
+}
+
+.img-container {
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.img-container .img1 {
+    width: 100%;
+    height: 100%;
+}
+
+.img-container .img2 {
+    width: 100%;
+    height: 100%;
+}
+
+.pop-container {
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.pop-frame {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.exit-con {
+    color: white;
+    font-weight: bolder;
+    font-size: xx-large;
+    float: right;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.pop-con {
+    width: 80%;
+}
+
+.pop-con.gallery {
+    display: grid;
+    align-items: center;
+}
+
+.pop-img {
+    width: 100%;
+    height: 100%;
+}
+
+.pic1 {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.pic2 {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.bookbtn-container {
+    padding: 5px;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 25vh;
+}
+
+.phase-container {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.phase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 120px;
+}
+
+.phase-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.phase-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.active {
+    border: solid 3px red;
+}
+
+.connector {
+    width: 50px;
+    height: 3px;
+    background-color: white;
+}
+
+.progressed {
+    background-color: #7E7E7E;
+}
+
+.calendar-pax-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 10px;
+    width: 100%;
+}
+
+.in-day {
+    padding: 3px;
+}
+
+.out-day {
+    padding: 3px;
+}
+
+.room-img-container {
+    width: 70%;
+    gap: 10px;
+    display: flex;
+}
+
+span.imgxt {
+    display: none;
+    justify-self: flex-end;
+}
+
+.img-con {
+    align-self: flex-start;
+    width: 60%;
+    cursor: pointer;
+    display: grid;
+    align-items: center;
+}
+
+.img-con.pops {
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    z-index: 100;
+}
+
+.img-con.conf {
+    cursor: default;
+    width: 350px;
+}
+
+.icon {
+    width: 25px;
+    background: white;
+    position: absolute;
+    z-index: 2;
+}
+
+.icon.right {
+    padding: 5px;
+    justify-self: self-end;
+    cursor: pointer;
+    transition: all 0.4s;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.icon.left {
+    padding: 5px;
+    transform: rotate(180deg);
+    justify-self: self-start;
+    cursor: pointer;
+    opacity: 30%;
+    pointer-events: none;
+    transition: all 0.4s;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.booking-pic {
+    width: 100%;
+}
+
+.booking-type {
+    padding-bottom: 15px;
+}
+
+.amenity-container {
+    padding: 10px;
+}
+
+.sumry-pic-container {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.sumry-container {
+    width: 30%;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+.sumry-container.gpage {
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sumry-container.cpage {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.booking-type.smry {
+    padding-bottom: 0;
+}
+
+.smry-header {
+    padding-bottom: 15px;
+}
+
+.smry {
+    width: 100%;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    pointer-events: none;
+    font-size: large;
+    font-weight: bold;
+}
+
+.notouch {
+    width: 100%;
+    float: right;
+    text-align: right;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.notouch.conf {
+    text-align: left;
+}
+
+.nights {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.slct {
+    padding: 10px;
+}
+
+.vat {
+    display: none;
+}
+
+.price-vat {
+    display: none;
+    background-color: white;
+    padding: 5px;
+}
+
+.dtls-header {
+    background-color: red;
+    color: white;
+    padding: 15px;
+    display: flex;
+}
+
+.dtls-type {
+    font-weight: 500;
+    font-size: 32px;
+    flex: 1;
+}
+
+.dtls-frame {
+    background-color: white;
+    width: 40%;
+    position: absolute;
+    top: 30%;
+}
+
+.ginput {
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(235, 230, 230);
+    background-color: transparent;
+    width: 100%;
+    margin-bottom: 5px;
+    transition: all 0.5s;
+}
+
+.pad-15 {
+    padding: 15px;
+}
+
+.ginput:focus {
+    border-bottom: red 2px solid;
+}
+
+.ginfo-container {
+    background-color: white;
+    width: 450px;
+    padding: 15px;
+
+}
+
+.tbl-info {
+    align-self: flex-start;
+}
+
+.result {
+    padding: 5px;
+    color: red;
+    display: none;
+}
+
+.frow {
+    display: flex;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex.conf {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.conf-info {
+    width: 60%;
+    margin: auto;
+}
+
+.conf-header {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.success-logo {
+    width: 150px;
+}
+
+.success-msg {
+    width: 50%;
+    padding: 25px;
+}
+
+.gap {
+    height: 25px;
+    width: 100%;
+}
+
+.sec-about {
+    width: 100%;
+}
+
+.img-sec-con {
+    width: 73%;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 6px 5px rgba(0, 0, 0, 0.3);
+}
+
+.img-sec {
+    width: 100%;
+}
+
+.outer-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    background: url('./images/lobby3.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.gtk-h1 {
+    border-left: 5px solid red;
+    padding: 15px;
+}
+
+.h1-con {
+    margin-left: 3%;
+}
+
+.h1-con.gtk {
+    margin-bottom: 10px;
+    word-spacing: 3px;
+    letter-spacing: 10px;
+}
+
+.kmabt {
+    font-size: 45px;
+}
+
+.back-top {
+    width: 50px;
+    height: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    position: fixed;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-color: rgb(231, 229, 229);
+    opacity: 50%;
+    transition: all 0.5s;
+}
+
+.back-top:hover {
+    opacity: 100%;
+}
+
+.h3-con {
+    border-left: 3px double red;
+    padding-left: 15px;
+}
+
+.dtls {
+    padding: 15px;
+}
+
+.pop {
+    animation: pop-animate 0.6s;
+}
+
+.exit {
+    animation: exit-animate 0.6s;
+}
+
+.popp {
+    animation: pop-pop 0.5s;
+}
+
+.exitt {
+    animation: exit-pop 0.3s;
+}
+
+@keyframes pop-animate {
+    from {
+        top: 0%;
+        opacity: 0%;
+    }
+
+    to {
+        top: 30%;
+        opacity: 100%;
+    }
+}
+
+@keyframes exit-animate {
+    from {
+        top: 30%;
+        opacity: 100%;
+    }
+
+    to {
+        top: 0%;
+        opacity: 0%;
+    }
+}
+
+@keyframes pop-pop {
+    from {
+        display: none;
+    }
+
+    to {
+        display: flex;
+    }
+}
+
+@keyframes exit-pop {
+    from {
+        display: flex;
+    }
+
+    to {
+        display: none;
+    }
+}

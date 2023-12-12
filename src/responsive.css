@@ -1,0 +1,272 @@
+@media screen and (max-width: 1300px) {
+    .rms-body {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    nav {
+        width: 100%;
+    }
+
+    .sumry-pic-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sumry-container {
+        width: 100%;
+    }
+
+    .room-img-container {
+        width: 100%;
+    }
+
+    .sumry-container.gpage {
+        width: 100%;
+    }
+
+    .conf-info {
+        width: 100%;
+    }
+
+    .rms {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .room2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .room4 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .menu-con {
+        display: flex;
+    }
+
+    .link-container {
+        display: none;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    .pop-frame {
+        width: 95%;
+    }
+
+    .img-container {
+        flex-direction: column;
+    }
+
+    .perks-container {
+        width: 100%;
+    }
+
+    .phase p {
+        display: none;
+    }
+
+    .calendar-pax-container {
+        flex-direction: column;
+    }
+
+    .pax-container {
+        width: 100%;
+    }
+
+    .day-in {
+        width: 100%;
+
+        .in-day {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+        }
+    }
+
+    .day-out {
+        width: 100%;
+
+        .out-day {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+        }
+    }
+
+    .room-img-container {
+        flex-direction: column;
+        align-items: center;
+
+        .img-con {
+            width: 100%;
+            cursor: default;
+        }
+
+        .booking-pic {
+            pointer-events: none;
+        }
+
+        .amenity-container {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    .sumry-container.gpage {
+        flex-direction: column;
+        align-items: center;
+
+        .ginfo-container {
+            width: 100%;
+        }
+
+        .gpage-smry {
+            width: 100%;
+        }
+    }
+
+    .conf {
+        flex-direction: column-reverse;
+
+        .img-con.conf {
+            width: 100%;
+        }
+    }
+
+    .success-msg {
+        width: 80%;
+    }
+
+    footer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .pic-container.rms-pic {
+        width: 70%;
+        height: 70%;
+    }
+
+    .card-body.rms-body {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    main {
+        width: 100%;
+    }
+
+    .card {
+        width: 300px;
+        padding: 2px;
+    }
+
+    .pic-container {
+        width: 260px;
+    }
+
+    .perks-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .dtls-frame {
+        width: 90%;
+    }
+
+    .h1-con.gtk {
+        font-size: x-small;
+    }
+
+    .conf-td {
+        display: flex;
+        justify-content: space-evenly;
+        float: left;
+    }
+
+    .conf-td label {
+        width: 100%;
+    }
+
+    .success-msg {
+        width: 90%;
+    }
+
+    .pic1 {
+        pointer-events: none;
+    }
+
+    .pic2 {
+        pointer-events: none;
+    }
+
+    footer {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 20%;
+    }
+
+    .h3-con.fitem {
+        margin-bottom: 10px;
+    }
+
+    .fitem {
+        line-height: 120%;
+    }
+
+    .fitem p {
+        padding-left: 0;
+    }
+
+    .fitem li {
+        padding-left: 0;
+    }
+
+    .pic-container.rms-pic {
+        width: 90%;
+        height: 70%;
+    }
+
+    .card-body.rms-body {
+        width: 90%;
+    }
+
+
+
+    .amenities {
+        height: auto;
+    }
+
+    .services {
+        height: auto;
+    }
+}
+
+@media screen and (max-height: 478px) {
+    .pop-container {
+        z-index: 1000;
+    }
+
+    .pop-frame {
+        width: 70%;
+    }
+}

@@ -1,0 +1,117 @@
+{
+    "room1": [
+        {
+            "amenities": {
+                "data": "- Cabinet<br>- WiFi with up to 25/MBps<br>- Working Table"
+            },
+            "services": {
+                "data": "- Room Service (Free)<br>- Next day breakfast<br>- Safe box"
+            },
+            "description": "This room is ideally suited for solo travelers in pursuit of both comfort and affordability. It features a single bed with a high-quality, regular mattress, ensuring a restful nights sleep while remaining budget-conscious.",
+            "images": {
+                "headerpic": "./src/images/rooms/room1/room1-pic.jpg",
+                "picsrc": "./src/images/rooms/room1/room1-pic2.jpg",
+                "picsrc2": "./src/images/rooms/room1/room1-pic3.jpg"
+            },
+            "pax": {
+                "adult": 1,
+                "child": 1
+            },
+            "price": {
+                "room": 2050
+            }
+        }
+    ],
+    "room2": [
+        {
+            "amenities": {
+                "data": "- Aircon<br>- Alarm Clock<br>- Cabinet<br>- Coffee maker<br>- Flat-screen TV with cable channels<br>- Mini Fridge<br>- WiFi with up to 25/MBps<br>- Working Table"
+            },
+            "services": {
+                "data": "- Complimentary bottled water<br>- Housekeeping Services (Free)<br>- Next day breakfast<br>- Room Service (Free)<br>- Safe box"
+            },
+            "description": "Suitable and recommended for business travelers that is looking for comfortable stay. This room has one queen-sized bed, a table paired with comfortable and adjustable chair on which a business person can use when working. Also, this room has mini fridge that can be used to store foods and drinks.",
+            "images": {
+                "headerpic": "./src/images/rooms/room2/room2-pic.jpg",
+                "picsrc": "./src/images/rooms/room2/room2-pic2.jpg",
+                "picsrc2": "./src/images/rooms/room2/room2-pic3.jpg"
+            },
+            "pax": {
+                "adult": 2,
+                "child": 1
+            },
+            "price": {
+                "room": 3650
+            }
+        }
+    ],
+    "room3": [
+        {
+            "amenities": {
+                "data": "- Alarm Clock<br>- Electric Kettle<br>- Flat-screen TV with cable channels<br>- Fully Airconditioned<br>- Sofa<br>- Table<br>- WiFi with up to 25/MBps<br>- Working Table"
+            },
+            "services": {
+                "data": "- Housekeeping Services (Free)<br>- Next day breakfast<br>- Room Service (Free)<br>- Safe box"
+            },
+            "description": "This well-appointed room features two spacious queen-sized beds, each accommodating two adults, making it an excellent choice for family vacations. Additionally, it offers a generously sized work desk and an adjustable chair, providing valuable amenities for discerning business travelers. All of these amenities are available at a highly competitive and affordable rate, ensuring a comfortable and cost-effective stay.",
+            "images": {
+                "headerpic": "./src/images/rooms/double-bed/double-bed3.jpg",
+                "picsrc": "./src/images/rooms/double-bed/double-bed2.jpg",
+                "picsrc2": "./src/images/rooms/double-bed/double-bed.jpg"
+            },
+            "pax": {
+                "adult": 4,
+                "child": 2
+            },
+            "price": {
+                "room": 4050
+            }
+        }
+    ],
+    "room4": [
+        {
+            "amenities": {
+                "data": "- Alarm Clock<br>- Flat-screen TV with cable channels<br>- Fully Airconditioned<br>- WiFi with up to 25/MBps<br>- Working Table"
+            },
+            "services": {
+                "data": "- Complimentary bottled water<br>- Next day breakfast<br>- Room Service (Free)<br>- Housekeeping Services (Free)<br>- Safe box"
+            },
+            "description": "Ideal for more comfortable stay, room with king-sized bed equipped with Hypnos mattresses and Egyptian cotton sheets. This room also has working table paired with comfortable chair with modern design.",
+            "images": {
+                "headerpic": "./src/images/rooms/super-king-bed/super-king-bed.jpg",
+                "picsrc": "./src/images/rooms/super-king-bed/super-king-bed2.jpg",
+                "picsrc2": "./src/images/rooms/super-king-bed/super-king-bed3.jpg"
+            },
+            "pax": {
+                "adult": 2,
+                "child": 1
+            },
+            "price": {
+                "room": 3700
+            }
+        }
+    ],
+    "room5": [
+        {
+            "amenities": {
+                "data": "- 2 Sofa<br>- Aircon<br>- Flat-screen TV with cable channels<br>- WiFi with up to 25/MBps<br>- Working Table"
+            },
+            "services": {
+                "data": "- Complimentary bottled water<br>- Next day breakfast<br>- Room Service (Free)<br>- Housekeeping Services (Free)<br>- Safe box"
+            },
+            "description": "This room features two single beds furnished with Emma Mattresses to guarantee a restful and comfortable sleep. Additionally, a functional worktable is provided, and guests can enjoy scenic views of the hotels surroundings.",
+            "images": {
+                "headerpic": "./src/images/rooms/deluxe-twin/deluxetwin-3.jpg",
+                "picsrc": "./src/images/rooms/deluxe-twin/deluxetwin-1.jpg",
+                "picsrc2": "./src/images/rooms/deluxe-twin/deluxetwin-2.jpg"
+            },
+            "pax": {
+                "adult": 2,
+                "child": 1
+            },
+            "price": {
+                "room": 3550
+            }
+        }
+    ]
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./src/images/hotel-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/responsive.css">
+    <title>Rest Hotel</title>
+</head>
+
+<body>
+    <header class="home-header">
+        <nav>
+            <div class="logo-container">
+                <img class="logo" src="./src/images/hotel-logo.png" alt="img" onclick="setHome()">
+                <p onclick="setHome()"><b>REST</b> Hotel</p>
+            </div>
+            <ul class="link-container">
+                <li class="link"><a href="./index.html">Home</a></li>
+                <li class="link"><a href="./rooms.php">Rooms</a></li>
+                <li class="link"><a href="./about.php">About</a></li>
+                <li class="link"><a href="./gallery.php">Gallery</a></li>
+                <li class="link"><a href="./verify.php">Verify Booking</a></li>
+                <li class="link"><a class="backred" href="./contact.php">Contact Us</a></li>
+            </ul>
+            <div class="mobile-menu-con">
+                <div class="mobile-menu">
+                    <ul class="mobile-links">
+                        <li class="link"><a href="./index.html">Home</a></li>
+                        <li class="link"><a href="./rooms.php">Rooms</a></li>
+                        <li class="link"><a href="./about.php">About</a></li>
+                        <li class="link"><a href="./gallery.php">Gallery</a></li>
+                        <li class="link"><a href="./verify.php">Verify Booking</a></li>
+                        <li class="link"><a href="./contact.php">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-con">
+                <div class="menu-frame">
+                    <div class="bar one"></div>
+                    <div class="bar two">
+                        <div class="bar four"></div>
+                    </div>
+                    <div class="bar three"></div>
+                </div>
+            </div>
+        </nav>
+        <div class="greet">
+            <p class="welcome">Welcome To <span class="red"> Rest </span> Hotel</p>
+            <p class="intro-line">Relax, Rejuvenate, Repeat</p>
+            <button class="book-btn" onclick="window.location='rooms.php'">
+                Book Now
+                <svg class="book-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <form class="card-container" method="post" action="view-action.php">
+            <div class="card room1">
+                <div class="pic-container">
+                    <img class="room-pic" src="./src/images/rooms/room1/room1-pic.jpg" alt="Card Image">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Junior Suite</h3>
+                    <p class="card-text">Ideal for 1 Adult - 200 SQ FT</p>
+                </div>
+                <button class="details-btn" name="view1">View Details</button>
+            </div>
+            <div class="card room2">
+                <div class="pic-container">
+                    <img class="room-pic" src="./src/images/rooms/room2/room2-pic.jpg" alt="Card Image">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Deluxe Queen</h3>
+                    <p class="card-text">Ideal for 2 Adults - 250 SQ FT</p>
+                </div>
+                <button class="details-btn" name="view2">View Details</button>
+            </div>
+            <div class="card room3">
+                <div class="pic-container">
+                    <img class="room-pic" src="./src/images/rooms/double-bed/double-bed3.jpg" alt="Card Image">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Superior Twin</h3>
+                    <p class="card-text">Ideal for 4 Adults - 250 SQ FT</p>
+                </div>
+                <button class="details-btn" name="view3">View Details</button>
+            </div>
+        </form>
+        <div class="more-container">
+            <button class="more-btn" onclick="window.location = 'rooms.php'">
+                Show More >>
+            </button>
+        </div>
+        <span class="back-top" onclick="window.scrollTo(0, 0)">
+            &uarr;
+        </span>
+    </main>
+    <div class="gap"></div>
+    <div class="gap"></div>
+    <div class="gap"></div>
+    <div class="gap"></div>
+    <div class="gap"></div>
+    <!-- Footer starts here -->
+    <footer>
+        <div align="center">
+            <h1>BOOK NOW!</h1>
+            <p>
+                ©2023 REST HOTEL BAGUIO.
+                ALL RIGHTS RESERVED.
+            </p>
+        </div>
+    </footer>
+
+    <script src=" ./src/index.js"></script>
+</body>
+
+</html>
